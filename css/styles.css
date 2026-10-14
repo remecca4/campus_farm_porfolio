@@ -327,7 +327,6 @@ section[id] {
   right: 1.1rem;
   bottom: 0.7rem;
   color: var(--green-500);
-  content: "↗";
   font-size: 1.7rem;
   font-weight: 900;
 }

@@ -19,7 +19,7 @@ campus-farm-portfolio/
     ├── hero-crops.jpg
     └── README.txt
 
-    certifications.html
+certifications.html
 Icon: ✓
 Heading: Organic and Other Certifications
 

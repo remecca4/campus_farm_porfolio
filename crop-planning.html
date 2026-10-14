@@ -1,16 +1,62 @@
-{% extends "base.html" %}
-<div class="container page-layout">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="[Add a page description]">
+
+  <title>Farm Overview and Ecological Systems | Campus Farm Portfolio</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">
+        <span class="logo-icon" aria-hidden="true">🌱</span>
+        <span>Campus Farm Portfolio</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+      >
+        Menu
+      </button>
+
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a aria-current="page" href="overview.html">Farm Overview</a>
+        <a href="index.html#portfolio-pages">All Topics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-banner">
+      <div class="container">
+        <span class="page-icon" aria-hidden="true">🌎</span>
+        <p class="eyebrow">Campus Farm Portfolio</p>
+        <h1>Crop Planning, Crop Sales, Pricing and Marketing</h1>
+        <p>[Optional page introduction placeholder]</p>
+      </div>
+    </header>
+
+    <div class="container page-layout">
       <article class="page-content">
         <section id="overview">
-           <a class="topic-card">
-            <span class="card-icon" aria-hidden="true">✓</span>
-            <h2>Organic and Other Certifications</h2>
-          </a>
+          <h2>Overview</h2>
           <p>[Add your content here.]</p>
 
           <figure class="photo-slot photo-slot-wide">
             <span aria-hidden="true">🌱</span>
-            <figcaption>Relevant photo placeholder</figcaption>
+            <figcaption>Relevant crop photo placeholder</figcaption>
           </figure>
         </section>
 
@@ -47,6 +93,18 @@
 
     <nav class="container page-pagination" aria-label="Portfolio page navigation">
       <a href="index.html">← Home</a>
-      <a href="certifications.html">Next: Certifications →</a>
+      <a href="buisness-mangement.html">Next: Buisness Mangement →</a>
     </nav>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <span aria-hidden="true">🌱</span>
+        Campus Farm Portfolio · <span data-current-year></span>
+      </p>
+      <p>[Add your name or course information here]</p>
+    </div>
+  </footer>
+</body>
+</html>
