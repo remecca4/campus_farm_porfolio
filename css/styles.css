@@ -409,7 +409,6 @@ section[id] {
 .page-banner {
   padding: 5rem 0;
   background:
-    radial-gradient(circle at 85% 20%, var(--yellow-300) 0 5rem, transparent 5.1rem),
     linear-gradient(135deg, var(--green-100), var(--yellow-100));
   border-bottom: 8px solid var(--green-500);
 }
