@@ -402,7 +402,14 @@ section[id] {
 .photo-slot-wide {
   min-height: 18rem;
   margin-block: 1.5rem;
+  .photo-slot-wide img {
+  width: 100%;
+  max-width: 32rem;
+  max-height: 24rem;
+  object-fit: cover;
 }
+}
+
 
 /* ---------- Interior pages ---------- */
 
