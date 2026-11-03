@@ -689,3 +689,92 @@ section[id] {
     grid-template-columns: 1fr;
   }
 }
+
+/* Soil particle cards */
+
+.soil-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem 2rem;
+}
+
+.soil-card {
+  padding: 1.25rem;
+  background: var(--green-100);
+  border: 2px solid var(--green-500);
+  border-radius: var(--radius);
+}
+
+.soil-card ul {
+  padding-left: 1.25rem;
+}
+
+.soil-card li {
+  margin-bottom: 0.5rem;
+}
+
+.soil-photo-placeholder {
+  display: grid;
+  min-height: 8rem;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  place-items: center;
+  background: var(--white);
+  border: 2px dashed var(--green-500);
+  border-radius: var(--radius-small);
+  text-align: center;
+}
+
+/* Soil texture list */
+
+.texture-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem 1.5rem;
+  padding-left: 1.25rem;
+}
+
+/* Numbered bed preparation process */
+
+.bed-preparation-steps {
+  padding-left: 1.75rem;
+}
+
+.bed-preparation-steps > li {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: var(--yellow-100);
+  border: 2px solid var(--green-200);
+  border-radius: var(--radius);
+}
+
+.bed-preparation-steps > li::marker {
+  color: var(--green-800);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.bed-preparation-steps h3 {
+  margin-bottom: 0.5rem;
+}
+
+.bed-preparation-steps p {
+  margin-block: 0.5rem 0;
+}
+
+@media (max-width: 800px) {
+  .soil-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .texture-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .texture-list {
+    grid-template-columns: 1fr;
+  }
+}
