@@ -842,3 +842,30 @@ section[id] {
     grid-template-columns: 1fr;
   }
 }
+.planning-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.planning-card {
+  padding: 1.25rem;
+  background: var(--green-100);
+  border: 2px solid var(--green-500);
+  border-radius: var(--radius);
+}
+
+.planning-card ul {
+  padding-left: 1.25rem;
+}
+
+.planning-card li {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 680px) {
+  .planning-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
