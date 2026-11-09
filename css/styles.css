@@ -915,3 +915,43 @@ section[id] {
     grid-template-columns: 1fr;
   }
 }
+
+.irrigation-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.irrigation-card {
+  min-width: 0;
+  padding: 1.25rem;
+  background: var(--green-100);
+  border: 2px solid var(--green-500);
+  border-radius: var(--radius);
+}
+
+/* Give the third method the full width. */
+.irrigation-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.irrigation-card h4 {
+  margin: 1.25rem 0 0.5rem;
+  color: var(--green-900);
+  font-size: 1rem;
+}
+
+.irrigation-card ul {
+  padding-left: 1.25rem;
+}
+
+.irrigation-card li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 680px) {
+  .irrigation-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
