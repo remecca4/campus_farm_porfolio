@@ -955,3 +955,171 @@ section[id] {
     grid-template-columns: 1fr;
   }
 }
+
+.crop-photo {
+  margin: 1rem 0 0;
+}
+
+.crop-photo figcaption {
+  margin-top: 0.65rem;
+  color: var(--text);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- The Scups Memorial ---------- */
+
+.page-content > .scups-tribute {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(248, 222, 122, 0.55),
+      transparent 65%
+    ),
+    #fffdf3;
+  border: 4px double var(--green-800);
+  border-radius: 2rem;
+  box-shadow:
+    0 8px 0 rgba(23, 63, 43, 0.12),
+    inset 0 0 0 8px #fff7ce;
+  text-align: center;
+}
+
+.scups-memorial-heading {
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.scups-memorial-heading h2 {
+  margin-bottom: 0.75rem;
+}
+
+.scups-subtitle {
+  color: var(--brown);
+  font-style: italic;
+}
+
+/* ---------- Portrait and flower arrangements ---------- */
+
+.scups-portrait-display {
+  position: relative;
+  max-width: 32rem;
+  margin: 2rem auto;
+  padding-inline: 2rem;
+}
+
+.scups-framed-portrait {
+  position: relative;
+  z-index: 1;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+.scups-gold-frame {
+  padding: 0.9rem;
+  background: linear-gradient(
+    135deg,
+    #fff0ac 0%,
+    #d6a536 20%,
+    #fff2b3 40%,
+    #ae7622 65%,
+    #f8de7a 85%,
+    #fff0ac 100%
+  );
+  border: 6px ridge #c79b3b;
+  border-radius: 1rem;
+  box-shadow:
+    0 12px 20px rgba(65, 48, 17, 0.2),
+    0 0 0 3px #78541e,
+    inset 0 0 0 3px #fff0ac;
+}
+
+.scups-gold-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 3px solid #78541e;
+  border-radius: 0.25rem;
+}
+
+.scups-framed-portrait figcaption {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.scups-nameplate {
+  display: inline-block;
+  padding: 0.35rem 2rem;
+  color: #38280f;
+  background: linear-gradient(135deg, #fff0ac, #d6a536, #f8de7a);
+  border: 2px solid #78541e;
+  border-radius: 0.35rem;
+  box-shadow: 0 3px 0 rgba(65, 48, 17, 0.15);
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.scups-photo-credit {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.scups-flowers {
+  position: absolute;
+  z-index: 2;
+  bottom: 4.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
+  line-height: 1.4;
+  writing-mode: vertical-rl;
+  pointer-events: none;
+}
+
+.scups-flowers-left {
+  left: 0;
+  transform: rotate(-18deg);
+}
+
+.scups-flowers-right {
+  right: 0;
+  transform: rotate(18deg);
+}
+
+/* ---------- The farewell ---------- */
+
+.scups-memorial-message {
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+.scups-final-farewell {
+  margin-block: 1.75rem;
+  padding-block: 1.25rem;
+  color: var(--green-900);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 3vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.scups-rest-in-peace {
+  color: var(--green-900);
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.scups-flower-bed {
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
